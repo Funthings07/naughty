@@ -1,12 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sophie</title>
     <style>
+        html{
+            scroll-behavior: smooth;
+        }
         body {
-            background-color: rgb(0, 0, 0);
+            background-color: rgb(255, 255, 255);
         }
         .ab{
             width: 100%;
@@ -14,36 +17,31 @@
         }
         h1{
             font-size: 3rem;
-            color: white;
-        }
-        h1:hover{
-            transform: scale(1.2);
-            transition: transform 4s ease;
+            color: rgb(0, 0, 0);
         }
         video{
-            border: 5px solid rgb(255, 255, 255);
-            width: 80%;
-            border-radius: 30px;
-           margin: 25px;
-           transition: transform 2s ease;
+            border: 2px black solid;
+            width: 300px;
+            margin: 5px;
+            margin-bottom: 8px;
+            filter: blur(10px);
+           transition: all 0.3s ease-in-out;
         }
         img{
-            border: 5px solid rgb(255, 255, 255);
-            width: 40%;
-            border-radius: 30px;
-            margin: 25px;
+            width: 300px;
+            margin: 5px;
+            margin-top: 8px;
+            margin-bottom: 8px;
+            transition: all 0.3s ease-in-out;
         }
         video:hover {
-        transform: scale(1.2);
-        
-    }
+            transform: scale(1.1);
+            filter: blur(0px);
+        }
     img:hover {
-        transform: scale(1.2);
-        transition: transform 2s ease;
+        transform: scale(1.1);
     }
         div{
-            width: 50%;
-            margin-left: 25%;
             text-align: center;
             color: white;
             overflow: hidden;
@@ -53,18 +51,33 @@
 </head>
 <body>
             <div>
-                <h1 draggable="true">Sophie Rain</h1>
-            <video autoplay muted loop><source src="./Video/IndelibleDisguisedXiphias.mp4" type="video/mp4"></video><br>
-            <video autoplay muted loop><source src="./Video/12.mp4" type="video/mp4"></video><br>
-            <video autoplay muted loop><source src="./Video/Untitled video - Made with Clipchamp.mp4" type="video/mp4"></video><br>
-            <video autoplay muted loop><source src="./Video/3.mp4" type="video/mp4" ></video><br>
-            <video autoplay muted loop><source src="./Video/5.mp4" type="video/mp4" ></video><br>
-            <video autoplay muted loop><source src="./Video/6.mp4" type="video/mp4" ></video><br>
-            <video autoplay muted loop><source src="./Video/2.mp4" type="video/mp4" ></video><br>
-            <video autoplay muted loop><source src="./Video/4.mp4" type="video/mp4" ></video><br>
-            <img src="./Video/blackedraw-big-city_640x724.jpeg" alt=""><br>
-            <a href="https://sxyprn.com/post/6603243fd2b21.html?sk=Sky-Bri&so=0&ss=latest"><h1>Surprise</h1></a>
+            <h1 draggable="true">Your Porn Videos</h1>
+            <video class="video" muted="muted" loop=""><source src="Sophie_files/IndelibleDisguisedXiphias.mp4" type="video/mp4"></video>
+            <video class="video" muted="muted" loop=""><source src="Sophie_files/12.mp4" type="video/mp4"></video>
+            <video class="video" muted="muted" loop=""><source src="Sophie_files/Untitled%20video%20-%20Made%20with%20Clipchamp.mp4" type="video/mp4"></video>
+            <video class="video" muted="muted" loop=""><source src="Sophie_files/3.mp4" type="video/mp4"></video>
+            <video class="video" muted="muted" loop=""><source src="Sophie_files/5.mp4" type="video/mp4"></video>
+            <video class="video" muted="muted" loop=""><source src="Sophie_files/6.mp4" type="video/mp4"></video>
+            <video class="video" muted="muted" loop=""><source src="Sophie_files/2.mp4" type="video/mp4"></video>
+            <video class="video" muted="muted" loop=""><source src="Sophie_files/4.mp4" type="video/mp4"></video>
+            <img src="Sophie_files/blackedraw-big-city_640x724.jpeg" alt=""><br>
+            <a href="https://sxyprn.com/post/6603243fd2b21.html?sk=Sky-Bri&amp;so=0&amp;ss=latest"><h1>Surprise</h1></a>
             </div>
-        
 </body>
+<script>
+    const videos = document.querySelectorAll('.video');
+
+videos.forEach(video => {
+  video.addEventListener('mouseenter', () => {
+    video.play();
+  });
+  
+  video.addEventListener('mouseleave', () => {
+    video.pause();
+    video.currentTime = 0;
+  });
+});
+
+</script>
+
 </html>
